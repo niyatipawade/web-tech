@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>prac_4_JSON </title>
+          <style>
+               body{
+                    background-color: lightcyan;
+                    font-family: Arial, Helvetica, sans-serif;
+
+               }
+          </style>
+          <script language="javascript">
+               var object1={"item": "toothpaste","price":"60"};
+               document.write("<h1>JSON example with javascript example</h1>");
+               document.write("<br>");
+               document.write("<h1>supermarket example</h1>");
+               document.write("<br>");
+               document.write("<h3>item ="+object1.item+"</h3>");
+               document.write("<br>");
+               document.write("<h3>Price: " + object1.price+"</h3>");
+
+               var object2={"item": "soap","price":"40"};
+               document.write("<br>");
+               document.write("<h3>item ="+object2.item+"</h3>");
+               document.write("<br>");
+               document.write("<h3>Price: " + object2.price+"</h3>");
+
+               var object3={"section":"toiletry","aisle":"5"};
+               document.write("<br>");
+               document.write("<h3>Section: " + object3.section+"</h3>");
+               document.write("<br>");
+               document.write("<h3>Aisle: " + object3.aisle+"</h3>");
+              
+               document.write("<br>");
+               document.write("<hr/>");
+               document.write(object2.item+ " from section " +object3.section+" in aisle "+object3.aisle+" costs "+object2.price+" Rs");
+               document.write("<hr/>");
+
+          </script>
+     </head>
+     <body>
+
+     </body>
+     
+</html>
