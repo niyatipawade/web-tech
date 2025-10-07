@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE employees[
+<!ELEMENT employees (employee+)>
+<!ELEMENT employee (id, name, department, designation, email, salary)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT designation (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]>
+<employees>
+<employee>
+<id>101</id>
+<name>niyati pawade</name>
+<department>Computer Technology</department>
+<designation>Software Engineer</designation>
+<email>niyatipawade@hotmail.com</email>
+<salary>200000</salary>
+</employee>
+<employee>
+<id>102</id>
+<name>nidhi patil</name>
+<department>HR</department>
+<designation>HR Manager</designation>
+<email>nidhipatil@yahoo.com</email>
+<salary>150000</salary>
+</employee>
+<employee>
+<id>103</id>
+<name>aahana bonde</name>
+<department>Finance</department>
+<designation>Finance Manager</designation>
+<email>aahanabonde@example.com</email>
+<salary>150000</salary>
+</employee>
+<employee>
+<id>104</id>
+<name>bharvi khanorkar</name>
+<department>Company</department>
+<designation>CEO</designation>
+<email>bharvikhanorkar@example.com</email>
+<salary>500000</salary>
+</employee>
+</employees>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees SYSTEM "employees.dtd">
+<?xml-stylesheet type="text/css" href="style.css"?>
+<employees>
+<employee>
+<id>101</id>
+<name>niyati pawade</name>
+<department>Computer Technology</department>
+<designation>Software Engineer</designation>
+<email>niyatipawade@hotmail.com</email>
+<salary>200000</salary>
+</employee>
+<employee>
+<id>102</id>
+<name>shruti patil</name>
+<department>HR</department>
+<designation>HR Manager</designation>
+<email>shrutip@yahoo.com</email>
+<salary>150000</salary>
+</employee>
+</employees>
