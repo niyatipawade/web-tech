@@ -1,0 +1,36 @@
+catalog{
+     background-color: mediumorchid;
+     display: block;
+     padding: 20px;
+     font-family: sans-serif;
+}
+
+cd{
+     display: block;
+     background-color: plum;
+     border: 1px;
+     padding: 8px;
+}
+
+country,company,price,year{
+     display: block;
+     margin: 2px;
+}
+
+title,artist{
+     font-style: italic;
+     font-weight: bold;
+     color: black;
+}
+body{
+     background-color: mediumorchid;
+     display: block;
+     padding: 20px;
+     font-family: sans-serif;
+}
+table{
+     display: block;
+     background-color: plum;
+     border: 1px;
+     padding: 8px;
+}
