@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Arithmetic & Dialogue Boxes</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <h2>JavaScript Arithmetic Operations & Dialogue Boxes</h2>
+
+  <script>
+    let num1 = parseFloat(prompt("Enter first number:"));
+    let num2 = parseFloat(prompt("Enter second number:"));
+
+    let sum = num1 + num2;
+    let difference = num1 - num2;
+    let product = num1 * num2;
+    let quotient = num1 / num2;
+
+    alert("Results:\n" +
+          "Addition: " + sum + "\n" +
+          "Subtraction: " + difference + "\n" +
+          "Multiplication: " + product + "\n" +
+          "Division: " + quotient);
+    let confirmMsg = confirm("Do you want to see the results on the webpage?");
+    if (confirmMsg) {
+      document.write("<div class='result-box'>");
+      document.write("<h3>Arithmetic Results:</h3>");
+      document.write("<p><strong>Addition:</strong> " + sum + "</p>");
+      document.write("<p><strong>Subtraction:</strong> " + difference + "</p>");
+      document.write("<p><strong>Multiplication:</strong> " + product + "</p>");
+      document.write("<p><strong>Division:</strong> " + quotient + "</p>");
+      document.write("</div>");
+    } else {
+      alert("You chose not to display the results on the page.");
+    }
+  </script>
+</body>
+</html>

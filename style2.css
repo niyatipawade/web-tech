@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+.result-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 20px 40px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.result-box p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.result-box strong {
+  color: #007bff;
+}
