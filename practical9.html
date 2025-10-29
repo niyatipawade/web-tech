@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>prac 9</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #cdf174;
+    margin: 0;
+    padding: 30px;
+  }
+
+  .container {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 320px;
+  }
+
+  h2 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  input:focus {
+    border-color: #3ed259;
+    outline: none;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #00ff1e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+
+  .error {
+    color:black;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Admission Registration</h2>
+  <form id="regForm" onsubmit="return validateForm()">
+    <label>Full Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <span class="error" id="nameError"></span>
+
+    <label>Email:</label>
+    <input type="text" id="email" placeholder="Enter your email">
+    <span class="error" id="emailError"></span>
+
+    <label>Phone Number:</label>
+    <input type="text" id="phone" placeholder="Enter your phone number">
+    <span class="error" id="phoneError"></span>
+
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Enter password">
+    <span class="error" id="passError"></span>
+
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+<script>
+function validateForm() {
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let phone = document.getElementById("phone").value.trim();
+  let password = document.getElementById("password").value.trim();
+
+  let nameError = document.getElementById("nameError");
+  let emailError = document.getElementById("emailError");
+  let phoneError = document.getElementById("phoneError");
+  let passError = document.getElementById("passError");
+
+  nameError.textContent = "";
+  emailError.textContent = "";
+  phoneError.textContent = "";
+  passError.textContent = "";
+
+  let valid = true;
+
+  if (name === "") {
+    nameError.textContent = "Name is required";
+    valid = false;
+  }
+
+  let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!email.match(emailPattern)) {
+    emailError.textContent = "Enter a valid email address";
+    valid = false;
+  }
+
+  let phonePattern = /^[0-9]{10}$/;
+  if (!phone.match(phonePattern)) {
+    phoneError.textContent = "Enter a 10-digit phone number";
+    valid = false;
+  }
+
+  if (password.length < 6) {
+    passError.textContent = "Password must be at least 6 characters";
+    valid = false;
+  }
+
+  return valid;
+}
+</script>
+
+</body>
+</html>
